@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @message_sub_type.type_id %>
+</p>
+
+<p>
+  <b>Subtype name:</b>
+  <%= @message_sub_type.subtype_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_sub_type_path(@message_sub_type) %> |
+<%= link_to 'Back', message_sub_types_path %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Message:</b>
+  <%= @message_flow.message_id %>
+</p>
+
+<p>
+  <b>Flow order:</b>
+  <%= @message_flow.flow_order %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @message_flow.user_id %>
+</p>
+
+<p>
+  <b>Date received:</b>
+  <%= @message_flow.date_received %>
+</p>
+
+<p>
+  <b>Date resolved:</b>
+  <%= @message_flow.date_resolved %>
+</p>
+
+<p>
+  <b>Response choice:</b>
+  <%= @message_flow.response_choice_id %>
+</p>
+
+<p>
+  <b>Response notes:</b>
+  <%= @message_flow.response_notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_flow_path(@message_flow) %> |
+<%= link_to 'Back', message_flows_path %>

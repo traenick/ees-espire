@@ -1,0 +1,35 @@
+<h1>Listing message_flows</h1>
+
+<table>
+  <tr>
+    <th>Message</th>
+    <th>Flow order</th>
+    <th>User</th>
+    <th>Date received</th>
+    <th>Date resolved</th>
+    <th>Response choice</th>
+    <th>Response notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @message_flows.each do |message_flow| %>
+  <tr>
+    <td><%= message_flow.message_id %></td>
+    <td><%= message_flow.flow_order %></td>
+    <td><%= message_flow.user_id %></td>
+    <td><%= message_flow.date_received %></td>
+    <td><%= message_flow.date_resolved %></td>
+    <td><%= message_flow.response_choice_id %></td>
+    <td><%= message_flow.response_notes %></td>
+    <td><%= link_to 'Show', message_flow %></td>
+    <td><%= link_to 'Edit', edit_message_flow_path(message_flow) %></td>
+    <td><%= link_to 'Destroy', message_flow, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Message flow', new_message_flow_path %>

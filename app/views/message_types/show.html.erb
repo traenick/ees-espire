@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @message_type.name %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%= @message_type.desc %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_type_path(@message_type) %> |
+<%= link_to 'Back', message_types_path %>

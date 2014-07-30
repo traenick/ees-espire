@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subtype:</b>
+  <%= @response_choice.subtype_id %>
+</p>
+
+<p>
+  <b>Display order:</b>
+  <%= @response_choice.display_order %>
+</p>
+
+<p>
+  <b>Button title:</b>
+  <%= @response_choice.button_title %>
+</p>
+
+<p>
+  <b>Button style:</b>
+  <%= @response_choice.button_style %>
+</p>
+
+<p>
+  <b>Api string:</b>
+  <%= @response_choice.api_string %>
+</p>
+
+<p>
+  <b>Note required:</b>
+  <%= @response_choice.note_required %>
+</p>
+
+
+<%= link_to 'Edit', edit_response_choice_path(@response_choice) %> |
+<%= link_to 'Back', response_choices_path %>

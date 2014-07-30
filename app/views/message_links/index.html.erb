@@ -1,0 +1,27 @@
+<h1>Listing message_links</h1>
+
+<table>
+  <tr>
+    <th>Message</th>
+    <th>Display title</th>
+    <th>Url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @message_links.each do |message_link| %>
+  <tr>
+    <td><%= message_link.message_id %></td>
+    <td><%= message_link.display_title %></td>
+    <td><%= message_link.url %></td>
+    <td><%= link_to 'Show', message_link %></td>
+    <td><%= link_to 'Edit', edit_message_link_path(message_link) %></td>
+    <td><%= link_to 'Destroy', message_link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Message link', new_message_link_path %>

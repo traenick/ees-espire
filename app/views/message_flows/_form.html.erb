@@ -1,0 +1,45 @@
+<%= form_for(@message_flow) do |f| %>
+  <% if @message_flow.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@message_flow.errors.count, "error") %> prohibited this message_flow from being saved:</h2>
+
+      <ul>
+      <% @message_flow.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :message_id %><br />
+    <%= f.number_field :message_id %>
+  </div>
+  <div class="field">
+    <%= f.label :flow_order %><br />
+    <%= f.number_field :flow_order %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :date_received %><br />
+    <%= f.datetime_select :date_received %>
+  </div>
+  <div class="field">
+    <%= f.label :date_resolved %><br />
+    <%= f.datetime_select :date_resolved %>
+  </div>
+  <div class="field">
+    <%= f.label :response_choice_id %><br />
+    <%= f.number_field :response_choice_id %>
+  </div>
+  <div class="field">
+    <%= f.label :response_notes %><br />
+    <%= f.text_field :response_notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
