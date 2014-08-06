@@ -1,6 +1,9 @@
 class MessagesController < ApplicationController
   # GET /messages
   # GET /messages.json
+
+  before_filter :get_message_sub_types
+
   def index
     @messages = Message.all
 
@@ -17,7 +20,7 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @message }
+      format.json { render :json => @message.to_json(:include => [:message_links, :message_flows, {:message_sub_type => {:include => :response_choices}}])}
     end
   end
 
@@ -80,4 +83,34 @@ class MessagesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def add_link
+    @message = Message.find(params[:message_id])
+    new_link = @message.message_links.new(display_title:params[:title], url:params[:url])
+    if new_link.save
+      respond_to do |format|
+        format.js
+      end
+    end
+  end
+
+  def add_user_to_flow
+    @message = Message.find(params[:message_id])
+    new_flow = @message.message_flows.new(message_id:params[:message_id], user_id:params[:user_id], flow_order:@message.message_flows.count+1)
+    if new_flow.save
+      respond_to do |format|
+        format.js
+      end
+    end
+  end
+
+  private
+
+  def get_message_sub_types
+    @message_sub_types = MessageSubType.all
+  end
+
+
+
+
 end

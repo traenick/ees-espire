@@ -1,7 +1,7 @@
 class CreateResponseChoices < ActiveRecord::Migration
   def change
     create_table :response_choices do |t|
-      t.integer :subtype_id
+      t.integer :message_sub_type_id
       t.integer :display_order
       t.string :button_title
       t.string :button_style

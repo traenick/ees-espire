@@ -1,4 +1,6 @@
 EesAcre::Application.routes.draw do
+  get "workspace/index"
+
   resources :response_choices
 
   resources :message_sub_types
@@ -12,6 +14,15 @@ EesAcre::Application.routes.draw do
   resources :message_flows
 
   resources :messages
+
+  match 'messages/add_link' => 'messages#add_link', as:'add_link'
+
+  match 'message_sub_types/add_response_choice' => 'message_sub_types#add_response_choice', as:'add_response_choice'
+
+  match 'messages/add_user_to_flow/:message_id/:user_id' => 'messages#add_user_to_flow', as:'add_user_to_flow'
+
+  match 'workspace' => 'workspace#index'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

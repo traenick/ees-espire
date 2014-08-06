@@ -1,0 +1,28 @@
+<div id='response-choices' class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      Response Choices
+    </h4>
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th></th>
+        <th>Order</th>
+        <th>API String</th>
+        <th>Note Required</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @message.message_sub_type.response_choices.each do |rc| %>
+          <tr>
+            <td><button class="<%= button_style(rc.button_style) %>"><%= rc.button_title %></button></td>
+            <td><%= rc.display_order %></td>
+            <td><%= rc.api_string %></td>
+            <td><%= rc.note_required %></td>
+          </tr>
+      <% end %>
+      </tbody></table>
+  </div>
+</div>

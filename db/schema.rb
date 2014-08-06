@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(:version => 20140730211621) do
   end
 
   create_table "message_sub_types", :force => true do |t|
-    t.integer  "type_id"
-    t.string   "subtype_name"
+    t.integer  "message_type_id"
+    t.string   "sub_type_name"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
@@ -48,18 +48,17 @@ ActiveRecord::Schema.define(:version => 20140730211621) do
   end
 
   create_table "messages", :force => true do |t|
-    t.integer  "type_id"
-    t.integer  "subtype_id"
+    t.integer  "message_sub_type_id"
     t.string   "subject"
     t.string   "body"
-    t.integer  "originator_user_id"
+    t.integer  "user_id"
     t.datetime "resolved_date"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
   end
 
   create_table "response_choices", :force => true do |t|
-    t.integer  "subtype_id"
+    t.integer  "message_sub_type_id"
     t.integer  "display_order"
     t.string   "button_title"
     t.string   "button_style"

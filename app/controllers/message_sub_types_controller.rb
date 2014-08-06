@@ -1,6 +1,9 @@
 class MessageSubTypesController < ApplicationController
   # GET /message_sub_types
   # GET /message_sub_types.json
+
+  before_filter :get_message_types
+
   def index
     @message_sub_types = MessageSubType.all
 
@@ -80,4 +83,22 @@ class MessageSubTypesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def add_response_choice
+    @message_sub_type = MessageSubType.find(params[:message_sub_type_id])
+    new_response = @message_sub_type.response_choices.new(button_title:params[:button_title], button_style:params[:button_style], display_order:params[:display_order], api_string:params[:api_string], note_required:params[:note_required])
+    if new_response.save
+      respond_to do |format|
+        format.js
+      end
+    end
+  end
+
+  private
+
+  def get_message_types
+    @message_types = MessageType.all
+  end
+
+
 end

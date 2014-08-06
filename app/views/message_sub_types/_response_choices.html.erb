@@ -1,0 +1,52 @@
+<div id='response-choices' class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      Response Choices
+    </h4>
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th></th>
+        <th>Order</th>
+        <th>API String</th>
+        <th>Note Required</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @message_sub_type.response_choices.each do |rc| %>
+          <tr>
+            <td><button class="<%= button_style(rc.button_style) %>"><%= rc.button_title %></button></td>
+            <td><%= rc.display_order %></td>
+            <td><%= rc.api_string %></td>
+            <td><%= rc.note_required %></td>
+          </tr>
+      <% end %>
+      </tbody></table>
+    <%= form_tag :add_response_choice, :class => "form-horizontal form-inline", :role => "form", :remote => true  do %>
+        <%= text_field_tag(:message_sub_type_id, @message_sub_type.id, :hidden => true) %>
+        <div class="form-group">
+          <%= label_tag(:button_title, "Title:") %>
+          <%= text_field_tag(:button_title, nil, :class =>'form-control') %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:button_style, "Color:") %>
+          <%= text_field_tag(:button_style, nil, :class =>'form-control') %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:display_order, "Order:") %>
+          <%= text_field_tag(:display_order, @message_sub_type.response_choices.count+1, :class =>'form-control') %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:api_string, "API String:") %>
+          <%= text_field_tag(:api_string, nil, :class =>'form-control') %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:note_required, "Note Required? ") %>
+          <%= check_box_tag(:note_required, nil, false, :class =>'form-control') %>
+        </div>
+        <%= submit_tag("Add", :class => 'btn btn-primary') %>
+    <% end %>
+  </div>
+</div>

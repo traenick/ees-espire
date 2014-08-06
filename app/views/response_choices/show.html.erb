@@ -1,35 +1,29 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = ResponseChoice -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
 
-<p>
-  <b>Subtype:</b>
-  <%= @response_choice.subtype_id %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:message_sub_type_id) %>:</strong></dt>
+  <dd><%= @response_choice.message_sub_type_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:display_order) %>:</strong></dt>
+  <dd><%= @response_choice.display_order %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:button_title) %>:</strong></dt>
+  <dd><%= @response_choice.button_title %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:button_style) %>:</strong></dt>
+  <dd><%= @response_choice.button_style %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:api_string) %>:</strong></dt>
+  <dd><%= @response_choice.api_string %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:note_required) %>:</strong></dt>
+  <dd><%= @response_choice.note_required %></dd>
+</dl>
 
-<p>
-  <b>Display order:</b>
-  <%= @response_choice.display_order %>
-</p>
-
-<p>
-  <b>Button title:</b>
-  <%= @response_choice.button_title %>
-</p>
-
-<p>
-  <b>Button style:</b>
-  <%= @response_choice.button_style %>
-</p>
-
-<p>
-  <b>Api string:</b>
-  <%= @response_choice.api_string %>
-</p>
-
-<p>
-  <b>Note required:</b>
-  <%= @response_choice.note_required %>
-</p>
-
-
-<%= link_to 'Edit', edit_response_choice_path(@response_choice) %> |
-<%= link_to 'Back', response_choices_path %>
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              response_choices_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_response_choice_path(@response_choice), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              response_choice_path(@response_choice),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

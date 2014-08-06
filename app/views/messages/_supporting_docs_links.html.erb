@@ -1,0 +1,29 @@
+<div id='supporting-docs-links' class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      Supporting Links and Docs
+    </h4>
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered">
+      <tbody>
+      <% @message.message_links.each do |ml| %>
+          <tr>
+            <td><%= link_to ml.display_title, ml.url, target:'_blank' %></td>
+          </tr>
+      <% end %>
+      </tbody></table>
+    <%= form_tag :add_link, :class => "form-horizontal form-inline", :role => "form", :remote => true  do %>
+        <%= text_field_tag(:message_id, @message.id, :hidden => true) %>
+        <div class="form-group">
+          <%= label_tag(:title, "Title:") %>
+          <%= text_field_tag(:title, nil, :class =>'form-control') %>
+        </div>
+        <div class="form-group">
+          <%= label_tag(:url, "URL:") %>
+          <%= text_field_tag(:url, nil, :class =>'form-control') %>
+        </div>
+        <%= submit_tag("Add", :class => 'btn btn-primary') %>
+    <% end %>
+  </div>
+</div>

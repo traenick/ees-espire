@@ -1,0 +1,30 @@
+<div id='message-flow' class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      Message Flow
+    </h4>
+  </div>
+  <div class="panel-body">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Received</th>
+        <th>Resolved</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @message.message_flows.each do |mf| %>
+          <tr>
+            <td><%= mf.user.full_name  %></td>
+            <td><%= mf.date_received %></td>
+            <td><%= mf.date_resolved %></td>
+          </tr>
+      <% end %>
+      </tbody></table>
+    <p>Click to add users:</p>
+    <% @message.unused_users.each do |u| %>
+        <%= link_to u.full_name, add_user_to_flow_path(@message.id, u.id), class:'label label-default', remote:true %>&nbsp;
+    <% end %>
+  </div>
+</div>

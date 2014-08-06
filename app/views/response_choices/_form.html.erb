@@ -1,41 +1,44 @@
-<%= form_for(@response_choice) do |f| %>
-  <% if @response_choice.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@response_choice.errors.count, "error") %> prohibited this response_choice from being saved:</h2>
-
-      <ul>
-      <% @response_choice.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<%= form_for @response_choice, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="form-group">
+    <%= f.label :message_sub_type_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :message_sub_type_id, :class => 'form-control' %>
     </div>
-  <% end %>
+  </div>
+  <div class="form-group">
+    <%= f.label :display_order, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :display_order, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :button_title, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :button_title, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :button_style, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :button_style, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :api_string, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :api_string, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :note_required, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.check_box :note_required, :class => 'form-control' %>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :subtype_id %><br />
-    <%= f.number_field :subtype_id %>
-  </div>
-  <div class="field">
-    <%= f.label :display_order %><br />
-    <%= f.number_field :display_order %>
-  </div>
-  <div class="field">
-    <%= f.label :button_title %><br />
-    <%= f.text_field :button_title %>
-  </div>
-  <div class="field">
-    <%= f.label :button_style %><br />
-    <%= f.text_field :button_style %>
-  </div>
-  <div class="field">
-    <%= f.label :api_string %><br />
-    <%= f.text_field :api_string %>
-  </div>
-  <div class="field">
-    <%= f.label :note_required %><br />
-    <%= f.check_box :note_required %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            response_choices_path, :class => 'btn btn-default' %>
+ 
 <% end %>
