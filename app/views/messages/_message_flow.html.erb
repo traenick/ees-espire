@@ -1,4 +1,4 @@
-<div id='message-flow' class="panel panel-default">
+
   <div class="panel-heading">
     <h4 class="panel-title">
       Message Flow
@@ -17,8 +17,11 @@
       <% @message.message_flows.each do |mf| %>
           <tr>
             <td><%= mf.user.full_name  %></td>
-            <td><%= mf.date_received %></td>
-            <td><%= mf.date_resolved %></td>
+            <td>
+              <%= mf.date_received %>&nbsp;<%= link_to 'x', toggle_date_path(@message.id,mf.id,1), class:'btn btn-default btn-xs', remote:true %>
+              <%= mf.date_received.nil? %>
+            </td>
+            <td><%= mf.date_resolved %>&nbsp;<%= link_to 'x', toggle_date_path(@message.id,mf.id,2), class:'btn btn-default btn-xs', remote:true %></td>
           </tr>
       <% end %>
       </tbody></table>
@@ -27,4 +30,3 @@
         <%= link_to u.full_name, add_user_to_flow_path(@message.id, u.id), class:'label label-default', remote:true %>&nbsp;
     <% end %>
   </div>
-</div>

@@ -19,15 +19,9 @@
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :user_id, :class => 'control-label' %>
+    <%= f.label :user_id, 'Originator', :class => 'control-label' %>
     <div class="controls">
-      <%= f.number_field :user_id, :class => 'form-control' %>
-    </div>
-  </div>
-  <div class="form-group">
-    <%= f.label :resolved_date, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.datetime_select :resolved_date, :class => 'form-control' %>
+      <%= f.collection_select(:user_id, @users, :id, :full_name, {:include_blank => "Please select"}, {:class => 'form-control'}) %>
     </div>
   </div>
 

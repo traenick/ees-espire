@@ -2,104 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afe5ce92-a168-46ea-86ab-093e9c06afc1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/messages/_message_flow.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/message_sub_types/_response_choices.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/messages/_response_choices.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/messages/_supporting_docs_links.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/messages/add_link.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/message_sub_types/add_response_choice.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/messages/add_user_to_flow.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/workspace.html.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140730210936_create_messages.rb" afterPath="$PROJECT_DIR$/db/migrate/20140730210936_create_messages.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/CLIP_BOARD.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workspace/_json_url_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workspace/_message_digest_json_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workspace/_selected_message_detail.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workspace/_selected_message_json_string.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workspace/get_message_JSON_from_URL.js.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workspace/load_message.js.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/messages/toggle_date.js.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workspace/update_selected_message_from_JSON.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ees_acre.iml" afterPath="$PROJECT_DIR$/.idea/ees_acre.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140730211555_create_message_sub_types.rb" afterPath="$PROJECT_DIR$/db/migrate/20140730211555_create_message_sub_types.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140730211621_create_response_choices.rb" afterPath="$PROJECT_DIR$/db/migrate/20140730211621_create_response_choices.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_flows/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/message_flows/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_links/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/message_links/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_sub_types/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/message_sub_types/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_types/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/message_types/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/response_choices/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/response_choices/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/_message_flow.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/_message_flow.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_flows/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/message_flows/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_links/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/message_links/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_sub_types/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/message_sub_types/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_types/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/message_types/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/response_choices/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/response_choices/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ees_acre.iml" afterPath="$PROJECT_DIR$/.idea/ees_acre.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_flows/index.html.erb" afterPath="$PROJECT_DIR$/app/views/message_flows/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_links/index.html.erb" afterPath="$PROJECT_DIR$/app/views/message_links/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_sub_types/index.html.erb" afterPath="$PROJECT_DIR$/app/views/message_sub_types/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_types/index.html.erb" afterPath="$PROJECT_DIR$/app/views/message_types/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/response_choices/index.html.erb" afterPath="$PROJECT_DIR$/app/views/response_choices/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workspace/index.html.erb" afterPath="$PROJECT_DIR$/app/views/workspace/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/message.rb" afterPath="$PROJECT_DIR$/app/models/message.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/message_flow.rb" afterPath="$PROJECT_DIR$/app/models/message_flow.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/message_link.rb" afterPath="$PROJECT_DIR$/app/models/message_link.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/message_sub_type.rb" afterPath="$PROJECT_DIR$/app/models/message_sub_type.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/message_sub_types_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/message_sub_types_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/message_type.rb" afterPath="$PROJECT_DIR$/app/models/message_type.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/messages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_flows/new.html.erb" afterPath="$PROJECT_DIR$/app/views/message_flows/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_links/new.html.erb" afterPath="$PROJECT_DIR$/app/views/message_links/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_sub_types/new.html.erb" afterPath="$PROJECT_DIR$/app/views/message_sub_types/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_types/new.html.erb" afterPath="$PROJECT_DIR$/app/views/message_types/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/new.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/response_choices/new.html.erb" afterPath="$PROJECT_DIR$/app/views/response_choices/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/response_choice.rb" afterPath="$PROJECT_DIR$/app/models/response_choice.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_flows/show.html.erb" afterPath="$PROJECT_DIR$/app/views/message_flows/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_links/show.html.erb" afterPath="$PROJECT_DIR$/app/views/message_links/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_sub_types/show.html.erb" afterPath="$PROJECT_DIR$/app/views/message_sub_types/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/message_types/show.html.erb" afterPath="$PROJECT_DIR$/app/views/message_types/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/show.html.erb" afterPath="$PROJECT_DIR$/app/views/messages/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/response_choices/show.html.erb" afterPath="$PROJECT_DIR$/app/views/response_choices/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/workspace.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/workspace.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/workspace_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/workspace_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/workspace_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/workspace_helper.rb" />
     </list>
     <ignored path="ees_acre.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407251392794" ignored="false" />
+    <file path="/Dummy.txt" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408595653213" ignored="false" />
     <file path="/message_type.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1406910319321" ignored="false" />
-    <file path="/message_sub_type.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407289346525" ignored="false" />
-    <file path="/show.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407294993905" ignored="false" />
-    <file path="/index.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407283729109" ignored="false" />
-    <file path="/schema.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1406958546509" ignored="false" />
-    <file path="/20140730211555_create_message_sub_types.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1406910792602" ignored="false" />
-    <file path="/_form.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407281218917" ignored="false" />
+    <file path="/message_sub_type.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407444292003" ignored="false" />
+    <file path="/show.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407385080733" ignored="false" />
+    <file path="/index.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407472539274" ignored="false" />
+    <file path="/schema.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408072719980" ignored="false" />
+    <file path="/20140730211555_create_message_sub_types.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408072731081" ignored="false" />
+    <file path="/_form.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408074062877" ignored="false" />
     <file path="/message_sub_types_controller.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407286911707" ignored="false" />
-    <file path="/application.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1406959134906" ignored="false" />
-    <file path="/application_helper.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407288837789" ignored="false" />
+    <file path="/application.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407513165461" ignored="false" />
+    <file path="/application_helper.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407372490686" ignored="false" />
     <file path="/application_controller.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1406943966412" ignored="false" />
-    <file path="/messages_controller.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407295627907" ignored="false" />
-    <file path="/message.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407295575163" ignored="false" />
+    <file path="/messages_controller.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408073962174" ignored="false" />
+    <file path="/message.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407454303316" ignored="false" />
     <file path="/response_choice.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407252736307" ignored="false" />
-    <file path="/message_flow.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407293953592" ignored="false" />
+    <file path="/message_flow.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407446780222" ignored="false" />
     <file path="/20140730210936_create_messages.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407253088550" ignored="false" />
     <file path="/20140730211621_create_response_choices.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407253113822" ignored="false" />
     <file path="/message_link.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407253361338" ignored="false" />
-    <file path="/user.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407293724300" ignored="false" />
-    <file path="/routes.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407296933553" ignored="false" />
+    <file path="/user.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407376865781" ignored="false" />
+    <file path="/routes.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407439324784" ignored="false" />
     <file path="/add_link.js.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407280008754" ignored="false" />
-    <file path="/bootstrap_and_overrides.css" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407279126181" ignored="false" />
+    <file path="/bootstrap_and_overrides.css" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407449960035" ignored="false" />
     <file path="/_supporting_docs_links.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407280267408" ignored="false" />
     <file path="/add_response_choice.js.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407286822071" ignored="false" />
     <file path="/_response_choices.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407290985975" ignored="false" />
     <file path="/add_user_to_flow.js.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407295057515" ignored="false" />
-    <file path="/_message_flow.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407295345882" ignored="false" />
-    <file path="/workspace_controller.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407297179668" ignored="false" />
+    <file path="/_message_flow.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407387408733" ignored="false" />
+    <file path="/workspace_controller.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407476746288" ignored="false" />
+    <file path="$PROJECT_DIR$/app/views/workspace/_message_summary_info.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407363532418" ignored="false" />
+    <file path="/_selected_message_detail.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407454472351" ignored="false" />
+    <file path="/load_message.js.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407372016543" ignored="false" />
+    <file path="/_selected_message_json_string.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407455740413" ignored="false" />
+    <file path="/workspace.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407380957199" ignored="false" />
+    <file path="/_message_digest_json_form.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407451721578" ignored="false" />
+    <file path="/workspace_helper.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407451526241" ignored="false" />
+    <file path="/_json_url_form.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407477116823" ignored="false" />
+    <file path="/get_message_JSON_from_URL.js.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407471779983" ignored="false" />
+    <file path="/Gemfile" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408040152830" ignored="false" />
+    <file path="/database.yml" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408062924109" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,97 +98,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/messages/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="26" selection-start="0" selection-end="3242" vertical-scroll-proportion="-7.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="110" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_user_to_flow.js.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/messages/add_user_to_flow.js.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="98" selection-start="98" selection-end="98" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/messages/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="40" selection-start="1427" selection-end="1427" vertical-scroll-proportion="-12.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="39" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/workspace.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="6" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.8157248">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/workspace_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="20" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/workspace/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="218" column="6" selection-start="6952" selection-end="6952" vertical-scroll-proportion="-15.708333">
-              <folding>
-                <element signature="n#style#0;n#table#0;n#a#0;n#h4#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#a#0;n#h4#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#a#0;n#h4#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/message.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="54" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message_flow.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/message_flow.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="61" selection-start="90" selection-end="100" vertical-scroll-proportion="0.0">
+            <state line="21" column="27" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -237,22 +129,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/message_sub_types/add_response_choice.js.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/message_sub_types_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/message_sub_type.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/message_sub_types/_response_choices.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/message_flow.rb" />
-        <option value="$PROJECT_DIR$/app/views/messages/add_user_to_flow.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/messages/_message_flow.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/message.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/messages/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workspace/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/workspace/_selected_message_json_string.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/workspace/get_message_JSON_from_URL.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/workspace_controller.rb" />
+        <option value="$PROJECT_DIR$/doc/CLIP_BOARD.txt" />
+        <option value="$PROJECT_DIR$/app/views/workspace/_json_url_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/messages/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/workspace/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/workspace.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/app/views/message_sub_types/_form.html.erb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140730211555_create_message_sub_types.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/messages/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -294,152 +186,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ees_acre" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="RailsProjectView">
         <subPane>
           <PATH>
@@ -500,6 +246,198 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="messages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message_sub_types" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -507,7 +445,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="js.erb" />
@@ -643,7 +581,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
       <method />
@@ -787,17 +725,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1420" height="832" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2525473" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28893742" sideWeight="0.53605443" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46394557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -872,121 +810,85 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/message_sub_types/add_response_choice.js.erb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="107" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="35" column="2" selection-start="691" selection-end="691" vertical-scroll-proportion="0.76754385" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/message_sub_types/_response_choices.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/workspace/_json_url_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="13" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.6275395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/message_flows_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/add_link.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="139" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/_message_flow.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="113" selection-start="800" selection-end="800" vertical-scroll-proportion="-14.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="54" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/message_flow.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="61" selection-start="90" selection-end="100" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="110" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="40" selection-start="1427" selection-end="1427" vertical-scroll-proportion="-12.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/add_user_to_flow.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="98" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="68" selection-start="294" selection-end="294" vertical-scroll-proportion="0.17100978" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/workspace/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="6" selection-start="6952" selection-end="6952" vertical-scroll-proportion="-15.708333">
-          <folding>
-            <element signature="n#style#0;n#table#0;n#a#0;n#h4#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#a#0;n#h4#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#table#0;n#a#0;n#h4#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="32" column="67" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.022727273" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140730211555_create_message_sub_types.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="39" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="20" selection-start="163" selection-end="163" vertical-scroll-proportion="0.090771556" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="0" selection-end="3242" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
+        <state line="37" column="34" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.8114035" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/workspace_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/message_sub_type.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="43" selection-start="289" selection-end="289" vertical-scroll-proportion="0.2631579" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/workspace.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="6" selection-start="2544" selection-end="2544" vertical-scroll-proportion="0.8157248">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="53" column="34" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.023183925" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="29" selection-start="2528" selection-end="2537" vertical-scroll-proportion="0.07264297" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/message_sub_types/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/workspace/_selected_message_json_string.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="64" selection-start="182" selection-end="182" vertical-scroll-proportion="0.08784773" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/message_sub_types/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="57" selection-start="154" selection-end="154" vertical-scroll-proportion="0.129683" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/message_sub_types_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="2" selection-start="2849" selection-end="2924" vertical-scroll-proportion="0.69740635" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/message_sub_types/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="177" selection-end="324" vertical-scroll-proportion="0.0658858" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/CLIP_BOARD.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="39" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/messages/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="27" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>

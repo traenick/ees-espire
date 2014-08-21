@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   # GET /messages
   # GET /messages.json
 
-  before_filter :get_message_sub_types
+  before_filter :get_message_sub_types, :get_users
 
   def index
     @messages = Message.all
@@ -20,7 +20,7 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render :json => @message.to_json(:include => [:message_links, :message_flows, {:message_sub_type => {:include => :response_choices}}])}
+      format.json { render json: @message.json_string }
     end
   end
 
@@ -104,10 +104,32 @@ class MessagesController < ApplicationController
     end
   end
 
+  def toggle_date
+    @message = Message.find(params[:message_id])
+    this_message_flow = MessageFlow.find(params[:mf_id])
+    if params[:date_type] == '1'
+      date_value = DateTime.now-(this_message_flow.message.message_flows.count-this_message_flow.flow_order) if this_message_flow.date_received.nil?
+      date_value = nil unless this_message_flow.date_received.nil?
+      this_message_flow.update_attribute('date_received', date_value)
+    else
+      date_value = DateTime.now-(this_message_flow.message.message_flows.count-this_message_flow.flow_order-0.5) if this_message_flow.date_resolved.nil?
+      date_value = nil unless this_message_flow.date_resolved.nil?
+      this_message_flow.update_attribute('date_resolved', date_value)
+    end
+    respond_to do |format|
+      format.js
+    end
+
+  end
+
   private
 
   def get_message_sub_types
     @message_sub_types = MessageSubType.all
+  end
+
+  def get_users
+    @users = User.all
   end
 
 

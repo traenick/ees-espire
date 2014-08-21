@@ -28,7 +28,7 @@
         <td><%= message.user.full_name %></td>
         <td><%= message.message_links.count %></td>
         <td><%= message.date_resolved_string %></td>
-        <td><%=l message.created_at %></td>
+        <td><%= message.date_originated_string %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_message_path(message), :class => 'btn btn-default btn-xs' %>

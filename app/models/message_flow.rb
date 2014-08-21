@@ -9,4 +9,14 @@ class MessageFlow < ActiveRecord::Base
     'Pending'
   end
 
+  def message_flow_status
+    if !self.date_received.nil? && !self.date_resolved.nil?
+      return 'resolved'
+    elsif !self.date_received.nil? && self.date_resolved.nil?
+      return 'pending'
+    else
+      return 'default'
+    end
+  end
+
 end

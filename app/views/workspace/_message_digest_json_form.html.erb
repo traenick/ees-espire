@@ -1,0 +1,12 @@
+
+
+
+  <%= form_tag update_message_digest_from_JSON_path, class:'form', remote:true do %>
+      <div class="form-group">
+        <%= text_area_tag :json_string, @messages.to_json, :class => 'form-control' %>
+      </div>
+
+      <%= submit_tag 'Redraw', :class => 'btn btn-primary' %>
+  <% end %>
+
+

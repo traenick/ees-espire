@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140730211621) do
+ActiveRecord::Schema.define(:version => 20140806073847) do
 
   create_table "message_flows", :force => true do |t|
     t.integer  "message_id"
@@ -36,8 +36,8 @@ ActiveRecord::Schema.define(:version => 20140730211621) do
   create_table "message_sub_types", :force => true do |t|
     t.integer  "message_type_id"
     t.string   "sub_type_name"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "message_types", :force => true do |t|
@@ -48,13 +48,15 @@ ActiveRecord::Schema.define(:version => 20140730211621) do
   end
 
   create_table "messages", :force => true do |t|
+    t.integer  "type_id"
     t.integer  "message_sub_type_id"
     t.string   "subject"
     t.string   "body"
     t.integer  "user_id"
     t.datetime "resolved_date"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.integer  "dollar_amt"
   end
 
   create_table "response_choices", :force => true do |t|
@@ -64,8 +66,8 @@ ActiveRecord::Schema.define(:version => 20140730211621) do
     t.string   "button_style"
     t.string   "api_string"
     t.boolean  "note_required"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
   create_table "users", :force => true do |t|

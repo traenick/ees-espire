@@ -23,3 +23,7 @@
               :method => 'delete',
               :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
               :class => 'btn btn-danger' %>
+
+<hr/>
+<h3>Pending MessageFlows:</h3>
+<p><%= @user.pending_messages %></p>

@@ -7,4 +7,9 @@ class User < ActiveRecord::Base
     self.first_name + ' ' + self.last_name
   end
 
+  def pending_messages
+    message_id_array = MessageFlow.where("user_id = #{self.id} AND date_received is not NULL AND date_resolved is NULL").map {|x| x.message_id}.to_a
+    message_digest = Message.find(message_id_array)
+  end
+
 end

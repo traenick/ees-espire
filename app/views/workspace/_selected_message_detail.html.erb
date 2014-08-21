@@ -1,0 +1,120 @@
+
+
+  <% if @selected_message_hash.nil?  %>
+      <p>No messages pending.</p>
+  <% else %>
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            Summary Info
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <table class="table table-bordered">
+            <tr class="active">
+              <td><%= @selected_message_hash['message_sub_type']['type_and_sub_type_name'] %></td>
+              <td><%= @selected_message_hash['user']['full_name'] %></td>
+              <td class="text-right"><%= @selected_message_hash['date_resolved_string'] %></td>
+            </tr>
+            <tr class="active">
+              <td><%= @selected_message_hash['subject'] %></td>
+              <td class="text-right"><%= number_to_currency(@selected_message_hash['dollar_amt']/100) if @selected_message_hash['dollar_amt'] %></td>
+              <td class="text-right"><%= @selected_message_hash['date_originated_string'] %></td>
+            </tr>
+          </table>
+          <p><%= @selected_message_hash['body'].html_safe %></p>
+        </div>
+      </div>
+    </div>
+
+    <%if @selected_message_hash['message_links'].count > 0 %>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            <table style="margin:0px;width:100%;padding:0px;">
+              <tr>
+                <td>Supporting Links & Docs<td>
+                <td class="text-right">
+                  <span class='label label-default'><%= @selected_message_hash['message_links'].count %></span>
+                </td>
+              </tr>
+            </table>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul>
+            <% @selected_message_hash['message_links'].each do |ml| %>
+                <li><a href="<%= ml['url'] %>" target="_blank"><%= ml['display_title'] %></a></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <% end %>
+
+
+    <% if @selected_message_hash['message_flows'].count > 0 %>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            <table style="margin:0px;width:100%;padding:0px;">
+              <tr>
+                <td>Flow History<td>
+                <td class="text-right">
+                  <div class="progress pull-right" style="width:100px;margin:0px;">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="<%= resolved_message_flow_count/@selected_message_hash['message_flows'].count %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= (resolved_message_flow_count*100)/@selected_message_hash['message_flows'].count %>%">
+                      <%= resolved_message_flow_count %>/<%= @selected_message_hash['message_flows'].count %>
+                    </div>
+                </td>
+              </tr>
+            </table>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+              <th></th>
+              <th>Who</th>
+              <th>Resolved</th>
+              <th>Received</th>
+            </tr>
+
+            </thead>
+            <tbody>
+            <% @selected_message_hash['message_flows'].each do |mf| %>
+                <tr class="<%= mf['message_flow_status'] %>">
+                  <td><%= mf['flow_order'] %></td>
+                  <td><%= mf['user']['full_name'] %></td>
+                  <td><%= mf['date_resolved'] if mf['date_resolved'] %></td>
+                  <td><%= mf['date_received'] if mf['date_received'] %></td>
+                </tr>
+            <% end %>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+  <div id='response-choices'>
+    <% @selected_message_hash['message_sub_type']['response_choices'].each do |rc| %>
+        <button class="btn btn-block btn-lg btn-default btn-<%= rc['button_style'] %>"><%= rc['button_title'] %></button></td>
+    <% end %>
+  </div>
+
+   <% end %>
+
