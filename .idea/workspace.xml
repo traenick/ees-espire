@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afe5ce92-a168-46ea-86ab-093e9c06afc1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/bootstrap_flash_helper.rb" />
     </list>
     <ignored path="ees_acre.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,8 +79,10 @@
       <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="15" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1408600595000" expanded="true" signature="108:179" placeholder="production:" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,10 +114,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="203" selection-end="203" vertical-scroll-proportion="0.45169714">
+            <state line="24" column="38" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap_flash_helper.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/helpers/bootstrap_flash_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="16" selection-start="370" selection-end="370" vertical-scroll-proportion="0.41666666">
               <folding />
             </state>
           </provider>
@@ -143,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/workspace_controller.rb" />
         <option value="$PROJECT_DIR$/doc/CLIP_BOARD.txt" />
         <option value="$PROJECT_DIR$/app/views/workspace/_json_url_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/messages/index.html.erb" />
@@ -159,6 +169,7 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/helpers/bootstrap_flash_helper.rb" />
       </list>
     </option>
   </component>
@@ -391,6 +402,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ees_acre" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -864,11 +893,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="34" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.8114035" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/message_sub_type.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="43" selection-start="289" selection-end="289" vertical-scroll-proportion="0.2631579" />
@@ -925,8 +949,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="15" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1408600595000" expanded="true" signature="108:179" placeholder="production:" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -953,7 +979,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="203" selection-end="203" vertical-scroll-proportion="0.45169714">
+        <state line="24" column="38" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/bootstrap_flash_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="16" selection-start="370" selection-end="370" vertical-scroll-proportion="0.41666666">
           <folding />
         </state>
       </provider>
