@@ -15,6 +15,8 @@ EesAcre::Application.routes.draw do
 
   resources :messages
 
+  root to: 'workspace#index'
+
   match 'messages/add_link' => 'messages#add_link', as:'add_link'
 
   match 'message_sub_types/add_response_choice' => 'message_sub_types#add_response_choice', as:'add_response_choice'

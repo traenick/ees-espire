@@ -10,6 +10,8 @@
   <dd><%= @message.subject %></dd>
   <dt><strong><%= model_class.human_attribute_name(:body) %>:</strong></dt>
   <dd><%= @message.body %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:dollar_amt) %>:</strong></dt>
+  <dd><%= number_to_currency(@message.dollar_amt/100) if @message.dollar_amt %></dd>
   <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
   <dd><%= @message.user.full_name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:resolved_date) %>:</strong></dt>

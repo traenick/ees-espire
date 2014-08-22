@@ -10,6 +10,7 @@
       <th><%= model_class.human_attribute_name(:message_sub_type_id) %></th>
       <th><%= model_class.human_attribute_name(:subject) %></th>
       <th><%= model_class.human_attribute_name(:body) %></th>
+      <th><%= model_class.human_attribute_name(:dollar_amt) %></th>
       <th><%= model_class.human_attribute_name(:originator_user_id) %></th>
       <th>Link/Doc count</th>
       <th><%= model_class.human_attribute_name(:resolved_date) %></th>
@@ -25,6 +26,7 @@
         <td><%= message.message_sub_type.sub_type_name %></td>
         <td><%= message.subject %></td>
         <td><%= message.body %></td>
+        <td><%= number_to_currency(message.dollar_amt/100) if message.dollar_amt %></td>
         <td><%= message.user.full_name %></td>
         <td><%= message.message_links.count %></td>
         <td><%= message.date_resolved_string %></td>
