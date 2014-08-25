@@ -13,6 +13,19 @@ class MessagesController < ApplicationController
     end
   end
 
+  def digest
+    @messages = Message.all()
+    #@messages_array = JSON.parse(Message.all().to_json)
+    @messages_array = []
+    @messages.each do |m|
+      @messages_array << JSON.parse(m.json_string_digest)
+    end
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @messages_array }
+    end
+  end
+
   # GET /messages/1
   # GET /messages/1.json
   def show

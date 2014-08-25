@@ -7,7 +7,11 @@ class Message < ActiveRecord::Base
   has_many :message_links
 
   def json_string
-    self.to_json({:methods => [:date_resolved_string, :date_originated_string], :except => [:id, :created_at, :updated_at, :message_sub_type_id],:include => [{:user => {:methods => :full_name, :only => [:first_name, :last_name]}}, {:message_links => {:except => [:id, :created_at, :updated_at]}}, {:message_flows => {:methods => :message_flow_status, :except => [:id, :created_at, :updated_at, :message_id, :response_notes, :response_choice_id, :user_id], :include => {:user => {:methods => :full_name, :only => [:first_name, :last_name]}} }}, {:message_sub_type => {:methods => :type_and_sub_type_name, :except => [:id, :created_at, :updated_at, :message_type_id], :include => {:response_choices => {:except => [:id, :created_at, :updated_at]}}}}]})
+    self.to_json({:methods => [:date_resolved_string, :date_originated_string, :dollar_amt_float], :only => [:body, :subject],:include => [{:user => {:methods => :full_name, :only => [:first_name, :last_name]}}, {:message_links => {:except => [:id, :created_at, :updated_at]}}, {:message_flows => {:methods => :message_flow_status, :except => [:id, :created_at, :updated_at, :message_id, :response_notes, :response_choice_id, :user_id], :include => {:user => {:methods => :full_name, :only => [:first_name, :last_name]}} }}, {:message_sub_type => {:methods => :type_and_sub_type_name, :except => [:id, :created_at, :updated_at, :message_type_id], :include => {:response_choices => {:except => [:id, :created_at, :updated_at]}}}}]})
+  end
+
+  def json_string_digest
+    self.to_json({:methods => [:date_resolved_string, :date_originated_string, :dollar_amt_float], :only => [:id, :subject],:include => [{:user => {:methods => :full_name, :only => [:first_name, :last_name]}}, {:message_sub_type => {:methods => :type_and_sub_type_name, :only => []}}]})
   end
 
   def date_resolved_string
@@ -16,6 +20,10 @@ class Message < ActiveRecord::Base
 
   def date_originated_string
     self.created_at.strftime('%D %R')
+  end
+
+  def dollar_amt_float
+    Float(self.dollar_amt.to_i*0.01)
   end
 
   def unused_users

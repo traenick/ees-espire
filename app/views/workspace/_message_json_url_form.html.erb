@@ -1,8 +1,9 @@
 <%= form_tag get_message_JSON_from_URL_path, class:'form form-horizontal', remote:true do %>
     <div class="form-group">
+      <label>Message JSON Source URL:</label>
       <%= text_field_tag :json_url, nil, :class => 'form-control' %>
     </div>
 
-    <%= submit_tag 'Fetch message JSON from URL', :class => 'btn btn-primary' %>
+    <%= submit_tag 'Fetch JSON', :class => 'btn btn-primary' %>
 
 <% end %>

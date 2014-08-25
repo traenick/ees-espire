@@ -2,7 +2,8 @@
 
   <%= form_tag update_selected_message_from_JSON_path, class:'form', remote:true do %>
     <div class="form-group">
-        <%= text_area_tag :json_string, @message_JSON_to_display, :class => 'form-control' %>
+      <label>Message JSON to Display:</label>
+      <%= text_area_tag :json_string, @message_JSON_to_display, :class => 'form-control', :rows => 5 %>
     </div>
 
     <%= submit_tag 'Redraw', :class => 'btn btn-primary' %>

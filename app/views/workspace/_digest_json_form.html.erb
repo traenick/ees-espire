@@ -3,7 +3,8 @@
 
   <%= form_tag update_message_digest_from_JSON_path, class:'form', remote:true do %>
       <div class="form-group">
-        <%= text_area_tag :json_string, @messages.to_json, :class => 'form-control' %>
+        <label>Digest JSON to Display:</label>
+        <%= text_area_tag :json_string, @digest_JSON_to_display, :class => 'form-control', :rows => 5 %>
       </div>
 
       <%= submit_tag 'Redraw', :class => 'btn btn-primary' %>

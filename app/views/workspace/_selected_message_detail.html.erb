@@ -23,7 +23,7 @@
             </tr>
             <tr class="active">
               <td><%= @selected_message_hash['subject'] %></td>
-              <td class="text-right"><%= number_to_currency(@selected_message_hash['dollar_amt']/100) if @selected_message_hash['dollar_amt'] %></td>
+              <td class="text-right"><%= number_to_currency(@selected_message_hash['dollar_amt_float']) if @selected_message_hash['dollar_amt_float']>0 %></td>
               <td class="text-right"><%= @selected_message_hash['date_originated_string'] %></td>
             </tr>
           </table>

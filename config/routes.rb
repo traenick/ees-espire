@@ -23,12 +23,14 @@ EesAcre::Application.routes.draw do
 
   match 'messages/add_user_to_flow/:message_id/:user_id' => 'messages#add_user_to_flow', as:'add_user_to_flow'
   match 'messages/toggle_date/:message_id/:mf_id/:date_type' => 'messages#toggle_date', as:'toggle_date'
+  match 'messages_digest' => 'messages#digest'
 
 
   match 'workspace/load_message/:message_id' => 'workspace#load_message', as:'load_message'
   match 'workspace/update_selected_message_from_JSON' => 'workspace#update_selected_message_from_JSON', as:'update_selected_message_from_JSON'
   match 'workspace/update_message_digest_from_JSON' => 'workspace#update_message_digest_from_JSON', as:'update_message_digest_from_JSON'
   match 'workspace/get_message_JSON_from_URL' => 'workspace#get_message_JSON_from_URL', as:'get_message_JSON_from_URL'
+  match 'workspace/get_digest_JSON_from_URL' => 'workspace#get_digest_JSON_from_URL', as:'get_digest_JSON_from_URL'
   match 'workspace/(:user_id/(:show_json))' => 'workspace#index', as:'workspace'
 
 

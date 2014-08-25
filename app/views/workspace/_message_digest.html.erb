@@ -1,0 +1,28 @@
+<div class="table-responsive visible-md visible-lg">
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Type</th>
+      <th>Title</th>
+      <th>From</th>
+      <th>$ Amt</th>
+      <th>Received</th>
+      <th>Originated</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @messages_array.each do |m| %>
+        <tr id="digest-row-<%= m['id'] %>">
+          <td><%= m['message_sub_type']['type_and_sub_type_name'] %></td>
+          <td><%= m['subject'] %></td>
+          <td><%= m['user']['full_name'] %></td>
+          <td><%= number_to_currency(m['dollar_amt_float']) if m['dollar_amt_float']>=0.01 %></td>
+          <td></td>
+          <td><%= m['date_originated_string'] %></td>
+          <td><%= link_to 'VIEW',load_message_path(m['id']),class:'btn btn-primary',remote:true %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
