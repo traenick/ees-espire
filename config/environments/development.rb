@@ -40,9 +40,9 @@ EesAcre::Application.configure do
   config.action_mailer.smtp_settings = {
       address:              'smtp.gmail.com',
       port:                 587,
-      domain:               'youdata.com',
-      user_name:            'trae@youdata.com',
-      password:             'l3tm3inpl3as3',
+      domain:               'peachsquared.com',
+      user_name:            ENV["EMAIL_USERNAME"],
+      password:             ENV["EMAIL_PASSWORD"],
       authentication:       'plain',
       enable_starttls_auto: true  }
   config.action_mailer.perform_deliveries = true

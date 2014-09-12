@@ -14,6 +14,7 @@ gem 'bootstrap_helper'
 
 gem 'nokogiri'
 gem 'premailer-rails'
+gem "figaro"
 
 
 # Gems used only for assets and not required
