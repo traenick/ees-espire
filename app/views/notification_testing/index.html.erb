@@ -1,0 +1,15 @@
+<h3><ul>User Info</ul></h3>
+<strong>Full Name: </strong><%= @current_user.full_name %><br/>
+<strong>Email Address: </strong><%= @current_user.email_address %><br/><br/>
+
+
+
+<%= form_tag send_user_digest_path, class:'form' do %>
+    <div class="form-group">
+      <%= hidden_field_tag 'user_id', @current_user.id %>
+      <label>Daily Digest JSON to Email:</label>
+      <%= text_area_tag :json_string, @digest_JSON_to_display, :class => 'form-control', :rows => 5 %>
+    </div>
+
+    <%= submit_tag 'Send Daily Digest Email', :class => 'btn btn-primary' %>
+<% end %>

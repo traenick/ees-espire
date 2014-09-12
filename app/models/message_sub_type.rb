@@ -9,4 +9,9 @@ class MessageSubType < ActiveRecord::Base
     message_type.name + " | " + self.sub_type_name
   end
 
+  def message_type_name
+    message_type.name
+  end
+
+
 end

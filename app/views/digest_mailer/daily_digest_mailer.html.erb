@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<h3>Hello, <%= @current_user.full_name %></h3>
+<p>
+  You have <span class='label label-default'><%= @digest_JSON_to_display.count %></span> pending eSPIRE messages/transactions.<br>
+</p>
+
+<table>
+  <tr>
+    <td style="padding:10px;font-size:12px;color:#fff;background-color:#428bca;border-color:#357ebd;">
+      <a href="<%= @url %>/workspace" style="color:white"><strong>Open eSPIRE</strong></a>
+    </td>
+  </tr>
+</table>  <br/>
+
+
+  <table style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;line-height:1.4;color:#212f40;border:1px solid #ced7e0;border-collapse:collapse;" cellspacing="0" cellpadding="0">
+    <tr style="padding:10px;padding-left:20px;font-size:14px;background-color:#ced7e0;color:#596573">
+      <th>Type</th>
+      <th>Title</th>
+      <th>From</th>
+      <th>$ Amt</th>
+      <th>Received</th>
+      <th>Originated</th>
+    </tr>
+    <% @digest_JSON_to_display.each do |m| %>
+        <tr style='border:1px solid lightgray;'>
+          <td style='border:1px solid gray;padding:6px;'><%= m['message_sub_type']['sub_type_name'] %></td>
+          <td style='border:1px solid gray;padding:6px;'><%= m['subject'] %></td>
+          <td style='border:1px solid gray;padding:6px;'><%= m['user']['full_name'] %></td>
+          <td style='border:1px solid gray;padding:6px;text-align:right'><%= number_to_currency(m['dollar_amt_float']) if m['dollar_amt_float']>=0.01 %></td>
+          <td style='border:1px solid gray;padding:6px;'></td>
+          <td style='border:1px solid gray;padding:6px;'><%= m['date_originated_string'] %></td>
+        </tr>
+    <% end %>
+  </table>
+
+
+</body>
+</html>

@@ -12,4 +12,10 @@ class User < ActiveRecord::Base
     message_digest = Message.find(message_id_array)
   end
 
+  def user_digest_json_string
+    pending_messages.each do |m|
+      @messages_array << JSON.parse(m.json_string_digest)
+    end
+  end
+
 end

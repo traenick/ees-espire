@@ -12,6 +12,9 @@ gem 'httparty'
 
 gem 'bootstrap_helper'
 
+gem 'nokogiri'
+gem 'premailer-rails'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

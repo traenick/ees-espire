@@ -51,7 +51,8 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Workspace", workspace_path %></li>
-            <li><%= link_to "Mock Data", messages_path %></li>
+            <li><%= link_to "Notifier", notification_testing_path %></li>
+            <li><%= link_to "Mock API Data", messages_path %></li>
           </ul>
         </div>
       </div>
@@ -65,7 +66,7 @@
         </div>
         <div class="col-lg-3">
           <div class="well sidebar-nav">
-            <h3>CRUD Tables</h3>
+            <h3>Mock API Tables</h3>
             <ul class="nav nav-list">
               <% @all_models.each do |m| %>
                 <li><%= link_to m.pluralize.titleize, "/" + m.tableize  %></li>

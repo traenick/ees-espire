@@ -1,4 +1,8 @@
 EesAcre::Application.routes.draw do
+  get "notification_testing/index"
+
+  get "notification_testing/send_user_digest"
+
   get "workspace/index"
 
   resources :response_choices
@@ -32,6 +36,11 @@ EesAcre::Application.routes.draw do
   match 'workspace/get_message_JSON_from_URL' => 'workspace#get_message_JSON_from_URL', as:'get_message_JSON_from_URL'
   match 'workspace/get_digest_JSON_from_URL' => 'workspace#get_digest_JSON_from_URL', as:'get_digest_JSON_from_URL'
   match 'workspace/(:user_id/(:show_json))' => 'workspace#index', as:'workspace'
+
+
+  match 'notification_testing/send_user_digest' => 'notification_testing#send_user_digest', as: 'send_user_digest'
+  match 'notification_testing/(:user_id)' => 'notification_testing#index', as: 'notification_testing'
+
 
 
 
