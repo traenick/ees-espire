@@ -1,2 +1,4 @@
 $('#selected-message-detail').html("<%=j render partial: 'selected_message_detail' %> ");
 $('#selected-message-json-string').html("<%=j render partial: 'selected_message_json_string' %> ");
+$("[id^=digest-row]").removeClass("info");
+$("#digest-row-<%=@selected_message.id%>").addClass( "info" );

@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afe5ce92-a168-46ea-86ab-093e9c06afc1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/workspace.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/workspace.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workspace/_message_digest.html.erb" afterPath="$PROJECT_DIR$/app/views/workspace/_message_digest.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/notification_testing/index.html.erb" afterPath="$PROJECT_DIR$/app/views/notification_testing/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workspace/load_message.js.erb" afterPath="$PROJECT_DIR$/app/views/workspace/load_message.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/message.rb" afterPath="$PROJECT_DIR$/app/models/message.rb" />
     </list>
     <ignored path="ees_acre.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +22,7 @@
     <file path="/application_helper.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407372490686" ignored="false" />
     <file path="/application_controller.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1406943966412" ignored="false" />
     <file path="/messages_controller.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408940464555" ignored="false" />
-    <file path="/message.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1410546855658" ignored="false" />
+    <file path="/message.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1410565973808" ignored="false" />
     <file path="/response_choice.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407252736307" ignored="false" />
     <file path="/message_flow.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407446780222" ignored="false" />
     <file path="/20140730210936_create_messages.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407253088550" ignored="false" />
@@ -44,7 +40,7 @@
     <file path="/workspace_controller.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408941909449" ignored="false" />
     <file path="$PROJECT_DIR$/app/views/workspace/_message_summary_info.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407363532418" ignored="false" />
     <file path="/_selected_message_detail.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408920982277" ignored="false" />
-    <file path="/load_message.js.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1407372016543" ignored="false" />
+    <file path="/load_message.js.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1410562135036" ignored="false" />
     <file path="/_selected_message_json_string.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408941194325" ignored="false" />
     <file path="/workspace.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1410547931012" ignored="false" />
     <file path="/_message_digest_json_form.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408915793204" ignored="false" />
@@ -56,7 +52,7 @@
     <file path="/application.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408601519613" ignored="false" />
     <file path="/production.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1410553239608" ignored="false" />
     <file path="/update_message_digest_from_JSON.js.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408916450616" ignored="false" />
-    <file path="/_message_digest.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1410546036761" ignored="false" />
+    <file path="/_message_digest.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1410565838936" ignored="false" />
     <file path="/_digest_json_form.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1410462396891" ignored="false" />
     <file path="/_message_json_url_form.html.erb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1408941066253" ignored="false" />
     <file path="/digest_mailer.rb" changelist="afe5ce92-a168-46ea-86ab-093e9c06afc1" time="1410550308822" ignored="false" />
@@ -84,10 +80,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="digest_mailer.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="digest_mailer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/mailers/digest_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="39" selection-start="272" selection-end="272" vertical-scroll-proportion="0.26923078">
+            <state line="7" column="39" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,28 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification_testing_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/notification_testing_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="77" selection-end="90" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="114" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/notification_testing/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="57" selection-start="313" selection-end="313" vertical-scroll-proportion="-5.0">
+            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -168,6 +146,44 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="_message_digest.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/workspace/_message_digest.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="14" selection-start="733" selection-end="733" vertical-scroll-proportion="0.73177844">
+              <folding>
+                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="message.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/message.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="114" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_selected_message_detail.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/workspace/_selected_message_detail.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="66" selection-start="629" selection-end="629" vertical-scroll-proportion="-11.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/workspace_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="4" selection-start="782" selection-end="799" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -190,22 +206,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/notification_testing_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/message_sub_type.rb" />
-        <option value="$PROJECT_DIR$/app/models/message.rb" />
-        <option value="$PROJECT_DIR$/app/views/workspace/_message_digest.html.erb" />
         <option value="$PROJECT_DIR$/app/views/workspace/_selected_message_detail.html.erb" />
         <option value="$PROJECT_DIR$/app/views/digest_mailer/daily_digest_mailer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/workspace/index.html.erb" />
         <option value="$PROJECT_DIR$/app/mailers/digest_mailer.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/notification_testing/index.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/application.yml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/workspace.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/workspace/load_message.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/notification_testing/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/message.rb" />
+        <option value="$PROJECT_DIR$/app/views/workspace/_message_digest.html.erb" />
       </list>
     </option>
   </component>
@@ -805,7 +821,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1420" height="832" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -815,7 +831,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -890,41 +906,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/message_sub_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="291" selection-end="308" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="520" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/workspace/_message_digest.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="54" selection-start="432" selection-end="432" vertical-scroll-proportion="0.45081967">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/workspace/_selected_message_detail.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="66" selection-start="629" selection-end="629" vertical-scroll-proportion="0.42492917">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/workspace/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="230" selection-end="230" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="114" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
@@ -935,13 +916,6 @@
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="12" selection-start="254" selection-end="254" vertical-scroll-proportion="0.61538464">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/notification_testing/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="57" selection-start="313" selection-end="313" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
@@ -1009,8 +983,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/digest_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="272" selection-end="272" vertical-scroll-proportion="0.26923078">
+        <state line="7" column="39" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/workspace/load_message.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="208" selection-end="208" vertical-scroll-proportion="0.08746356">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/notification_testing/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/workspace/_selected_message_detail.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="66" selection-start="629" selection-end="629" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/workspace_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="4" selection-start="782" selection-end="799" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/message.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="114" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/workspace/_message_digest.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="14" selection-start="733" selection-end="733" vertical-scroll-proportion="0.73177844">
+          <folding>
+            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

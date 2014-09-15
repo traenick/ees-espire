@@ -5,7 +5,7 @@
       <th>Type</th>
       <th>Title</th>
       <th>From</th>
-      <th>$ Amt</th>
+      <th style="text-align:right">$ Amt</th>
       <th>Received</th>
       <th>Originated</th>
       <th></th>
@@ -13,7 +13,7 @@
     </thead>
     <tbody>
     <% @messages_array.each do |m| %>
-        <tr id="digest-row-<%= m['id'] %>">
+        <tr id="digest-row-<%= m['id']%>" class="<%= 'info' if m['id'] == @selected_message_hash['id'] %>">
           <td><%= m['message_sub_type']['sub_type_name'] %></td>
           <td><%= m['subject'] %></td>
           <td><%= m['user']['full_name'] %></td>
