@@ -46,6 +46,9 @@ class WorkspaceController < ApplicationController
 
   def update_message_digest_from_JSON
     @messages_array = JSON.parse(params[:json_string])
+    message_id = @messages_array.first['id'] unless @messages_array.empty?
+    @selected_message = Message.find(message_id) if message_id
+    @selected_message_hash = JSON.parse(@selected_message.json_string)
     respond_to do |format|
       format.js
     end

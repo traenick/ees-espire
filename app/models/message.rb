@@ -3,7 +3,7 @@ class Message < ActiveRecord::Base
 
   belongs_to :message_sub_type
   belongs_to :user
-  has_many :message_flows, :order => 'flow_order DESC'
+  has_many :message_flows, -> { order 'flow_order desc' }
   has_many :message_links
 
   def json_string

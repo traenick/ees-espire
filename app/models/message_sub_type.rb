@@ -3,7 +3,7 @@ class MessageSubType < ActiveRecord::Base
 
   belongs_to :message_type
   has_many :messages
-  has_many :response_choices, :order => :display_order
+  has_many :response_choices, -> {order 'display_order'}
 
   def type_and_sub_type_name
     message_type.name + " | " + self.sub_type_name

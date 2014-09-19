@@ -4,9 +4,10 @@ require File.expand_path('../boot', __FILE__)
 require "active_record/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
-require "active_resource/railtie"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
+
+#require "rails/all"
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -67,6 +68,12 @@ module EesAcre
 
     # to correct apple-touch-icon errors on heroku
     config.assets.initialize_on_precompile=false
+
+    # Require the gems listed in Gemfile, including any gems
+    # you've limited to :test, :development, or :production.
+    Bundler.require(:default, Rails.env)
+
+    config.serve_static_assets = true
 
   end
 end

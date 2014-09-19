@@ -81,4 +81,6 @@ EesAcre::Application.configure do
   config.action_mailer.perform_deliveries = true
 
 
+  config.eager_load = true
+
 end

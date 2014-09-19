@@ -5,7 +5,7 @@ class DigestMailer < ActionMailer::Base
     @current_user = user
     @digest_JSON_to_display = JSON(digest_json_string)
     @url = url
-    mail(to:@current_user.email_address, subject: "eSPIRE ALERT: #{@digest_JSON_to_display.count} pending messages.")
+    mail(to:@current_user.email_address, subject: "eSPIRE ALERT: #{@digest_JSON_to_display.count} pending #{'message'.pluralize(@digest_JSON_to_display.count)}.")
 
   end
 

@@ -21,25 +21,25 @@ EesAcre::Application.routes.draw do
 
   root to: 'workspace#index'
 
-  match 'messages/add_link' => 'messages#add_link', as:'add_link'
+  get 'messages/add_link' => 'messages#add_link', :as =>'add_link'
 
-  match 'message_sub_types/add_response_choice' => 'message_sub_types#add_response_choice', as:'add_response_choice'
+  post 'message_sub_types/add_response_choice' => 'message_sub_types#add_response_choice', :as => 'add_response_choice'
 
-  match 'messages/add_user_to_flow/:message_id/:user_id' => 'messages#add_user_to_flow', as:'add_user_to_flow'
-  match 'messages/toggle_date/:message_id/:mf_id/:date_type' => 'messages#toggle_date', as:'toggle_date'
-  match 'messages_digest' => 'messages#digest'
-
-
-  match 'workspace/load_message/:message_id' => 'workspace#load_message', as:'load_message'
-  match 'workspace/update_selected_message_from_JSON' => 'workspace#update_selected_message_from_JSON', as:'update_selected_message_from_JSON'
-  match 'workspace/update_message_digest_from_JSON' => 'workspace#update_message_digest_from_JSON', as:'update_message_digest_from_JSON'
-  match 'workspace/get_message_JSON_from_URL' => 'workspace#get_message_JSON_from_URL', as:'get_message_JSON_from_URL'
-  match 'workspace/get_digest_JSON_from_URL' => 'workspace#get_digest_JSON_from_URL', as:'get_digest_JSON_from_URL'
-  match 'workspace/(:user_id/(:show_json))' => 'workspace#index', as:'workspace'
+  get 'messages/add_user_to_flow/:message_id/:user_id' => 'messages#add_user_to_flow', :as => 'add_user_to_flow'
+  get 'messages/toggle_date/:message_id/:mf_id/:date_type' => 'messages#toggle_date', :as => 'toggle_date'
+  get 'messages_digest' => 'messages#digest'
 
 
-  match 'notification_testing/send_user_digest' => 'notification_testing#send_user_digest', as: 'send_user_digest'
-  match 'notification_testing/(:user_id)' => 'notification_testing#index', as: 'notification_testing'
+  get 'workspace/load_message/:message_id' => 'workspace#load_message', :as => 'load_message'
+  post 'workspace/update_selected_message_from_JSON' => 'workspace#update_selected_message_from_JSON', :as => 'update_selected_message_from_JSON'
+  post 'workspace/update_message_digest_from_JSON' => 'workspace#update_message_digest_from_JSON', :as => 'update_message_digest_from_JSON'
+  post 'workspace/get_message_JSON_from_URL' => 'workspace#get_message_JSON_from_URL', :as => 'get_message_JSON_from_URL'
+  post 'workspace/get_digest_JSON_from_URL' => 'workspace#get_digest_JSON_from_URL', :as => 'get_digest_JSON_from_URL'
+  get 'workspace/(:user_id/(:show_json))' => 'workspace#index', :as => 'workspace'
+
+
+  post 'notification_testing/send_user_digest' => 'notification_testing#send_user_digest', :as =>  'send_user_digest'
+  get 'notification_testing/(:user_id)' => 'notification_testing#index', :as =>  'notification_testing'
 
 
 
