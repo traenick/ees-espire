@@ -134,10 +134,12 @@
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.1.6, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.3.6, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v5.0.1.20140414130214, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.2.0.2, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap_helper (v4.2.3, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.3, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.0.1, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.3.0, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.8.0, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="css_parser (v1.3.5, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.2.1, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
@@ -165,14 +167,16 @@
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.1.6, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="raindrops (v0.13.0, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.3.2, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sass (v3.4.4, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.12.2, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.19, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass-rails (v4.0.3, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.11.0, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v2.1.4, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.19.1, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.4, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="twitter-bootstrap-rails (v3.1.1@1d93c5, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.2, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.5.3, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicorn (v4.8.3, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.0.7, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
   </component>
