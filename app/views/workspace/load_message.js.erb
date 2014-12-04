@@ -2,3 +2,7 @@ $('#selected-message-detail').html("<%=j render partial: 'selected_message_detai
 $('#selected-message-json-string').html("<%=j render partial: 'selected_message_json_string' %> ");
 $("[id^=digest-row]").removeClass("info");
 $("#digest-row-<%=@selected_message.id%>").addClass( "info" );
+
+//$("#message-digest").hide();
+//$("#selected-message-detail").show();
+//$("#back-to-list-button").show();

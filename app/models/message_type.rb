@@ -1,5 +1,15 @@
+# == Schema Information
+#
+# Table name: message_types
+#
+#  id         :integer          not null, primary key
+#  name       :string(255)
+#  desc       :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 class MessageType < ActiveRecord::Base
-  attr_accessible :desc, :name
 
   has_many :message_sub_types
 

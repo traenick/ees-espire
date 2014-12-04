@@ -26,7 +26,7 @@
         <td><%= response_choice.button_style %></td>
         <td><%= response_choice.api_string %></td>
         <td><%= response_choice.note_required %></td>
-        <td><%=l response_choice.created_at %></td>
+        <td><%= time_ago_in_words(response_choice.created_at, include_seconds:true)%> ago</td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_response_choice_path(response_choice), :class => 'btn btn-default btn-xs' %>

@@ -1,9 +1,9 @@
 class NotificationTestingController < ApplicationController
 
   def index
-    @current_user = User.find(params[:user_id] ? params[:user_id] : 1)
-    #@messages = @current_user.pending_messages
-    @messages = Message.all()
+    @current_user = User.find_by_ees_employee_code(params[:ees_employee_code] ? params[:ees_employee_code] : 'thisguy')
+    @messages = @current_user.pending_messages
+    #@messages = Message.all()
     #@messages_array = JSON.parse(Message.all().to_json)
     @messages_array = []
     @messages.each do |m|

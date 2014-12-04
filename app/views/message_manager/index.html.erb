@@ -1,0 +1,20 @@
+<p>
+  <%= link_to 'Poll Decision Engine', pull_from_queue_path, class: 'btn btn-primary', remote: true %>
+  <%= link_to 'Poll Local File', pull_from_local_file_path, class: 'btn btn-primary', remote: true %>
+</p>
+
+
+<%= form_tag parse_queue_data_path, :class =>'form', :remote => true  do %>
+    <div class="form-group">
+      <label>Queue Data to JSONify:</label>
+      <%= text_area_tag :queue_data_response, @queue_data_response, :class => 'form-control', :rows => 5 %>
+    </div>
+
+    <%= submit_tag 'Parse Me', :class => 'btn btn-primary' %>
+<% end %>
+
+<br/>
+
+<div id='parsed-json'>
+  <p><%= @new_deq_response.response_string_as_json %></p>
+</div>

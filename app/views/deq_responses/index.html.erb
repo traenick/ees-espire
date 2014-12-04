@@ -1,0 +1,40 @@
+<%- model_class = DeqResponse -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:response_string) %></th>
+      <th><%= model_class.human_attribute_name(:response_string_as_json) %></th>
+      <th><%= model_class.human_attribute_name(:resolved_at) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @deq_responses.each do |deq_response| %>
+      <tr>
+        <td><%= link_to deq_response.id, deq_response_path(deq_response) %></td>
+        <td style="font-size:9pt"><%= text_area_tag nil, deq_response.response_string %></td>
+        <td style="font-size:9pt"><%= text_area_tag nil, deq_response.response_string_as_json %></td>
+        <td><%= deq_response.resolved_at %></td>
+        <td><%=l deq_response.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_deq_response_path(deq_response), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      deq_response_path(deq_response),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_deq_response_path,
+            :class => 'btn btn-primary' %>

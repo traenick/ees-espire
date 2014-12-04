@@ -1,0 +1,44 @@
+[
+    {
+        "transactionId": "0141d551-8329-40b9-89b7-f2d64de792d7",
+        "processTypeId": "HURRALRT",
+        "stateIndex": 1,
+        "costCenterId": "CC01",
+        "sourceId": "819ca09b-0bac-4b3e-aa74-cbbd08c0775a",
+        "originatorInfo": {
+            "firstName": "bob",
+            "lastName": "sanders",
+            "email": "bob.sanders@eeps.com",
+            "id": "819ca09b-0bac-4b3e-aa74-cbbd08c0775a"
+        },
+        "arguments": [
+            {
+                "key": "message",
+                "value": "Hurricane Norbert is experiencing wind shear -- different wind speeds and/or directions at different altitudes -- which is limiting its intensification. Norbert is near its peak intensity and is expected to move into cooler water temperatures and more stable air, which should cause some weakening by this weekend.<br/><br/>Norbert's center is unlikely to make landfall, but it is expected to creep very slowly to northwest over the next couple of days, passing close enough to parts of Mexico's Baja Peninsula to produce some high surf, rip currents, gusty winds and locally heavy rain.<br/><br/>For this reason, a hurricane warning is in effect for the southern Baja Peninsula, though it is north of Cabo San Lucas. With that said, Cabo San Lucas is still under a tropical storm warning. Tropical storm watches were extended farther north, but still only include parts of Baja California Sur, the southern of the two Mexican states on the peninsula. <br/>Sustained winds had reached 61 mph at Cabo San Lucas as of 3 a.m. MDT Thursday, along with occasional heavy rain. Tropical storm-force winds (39 mph or greater) are possible in the warning area through Friday. At this time, the center of Norbert is expected to make its closest pass to the Baja Peninsula through Friday night. <br/><br/>Bands of heavy rain, local flash flooding, high surf and rip currents will also be threats in the southern half of the Baja peninsula. <br/>Given Norbert's small hurricane-force wind field, extending out only to 35 miles as of Friday morning, and its most likely center forecast track, hurricane-force conditions on the southern Baja peninsula appear unlikely."
+            },
+            {
+                "key": "recipient",
+                "value": {
+                    "firstName": "joe",
+                    "lastName": "smith",
+                    "email": "joe.smith@eeps.com",
+                    "id": "819ca09b-0bac-4b3e-aa74-cbbd08c0775a"
+                }
+            }
+        ],
+        "action": {
+            "isResponse": false,
+            "responseOptions": [
+                "Okay"
+            ]
+        },
+        "attachments": [
+            {
+                "mimeType": "application/pdf",
+                "filePath": "c:\ax\documents\expenses.doc",
+                "url":  "https:\\azureservice.com\ees\expenese.doc"
+
+            }
+        ]
+    }
+]

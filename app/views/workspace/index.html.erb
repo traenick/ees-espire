@@ -1,21 +1,26 @@
+
+
 <div class="row">
   <div class="col-md-12">
-    <ul class="nav nav-tabs visible-md visible-lg">
+    <ul class="nav nav-tabs">
       <li class="active"><a href="#">Pending <span class="badge"><%= @messages.count %></span></a></li>
       <li><a href="#">Archived</a></li>
     </ul>
-    <div class="hidden-md hidden-lg">
-      <button type="button" class="btn btn-default"><< Back to list</button>&nbsp;&nbsp;<span class="badge"><%= @messages.count %></span>
-    </div>
+
   </div>
+</div>
+
+
+<div id="back-to-list-button" class="hidden-md hidden-lg">
+  <p><%= link_to '<< Back to List',show_list_path,class:'btn btn-default',remote:true %></p>
 </div>
 
 <br/>
 
 
 <div class="row">
-    <div class="col-md-8">
-      <div id='message-digest'>
+    <div id='message-digest' class="col-md-8">
+      <div >
         <%= render :partial => 'message_digest' %>
       </div>
     </div>

@@ -1,0 +1,2 @@
+module GlobalVariablesHelper
+end

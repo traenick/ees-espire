@@ -24,12 +24,18 @@
         <%= f.text_field :dollar_amt, :class => 'form-control' %>
       </div>
     </div>
-  <div class="form-group">
-    <%= f.label :user_id, 'Originator', :class => 'control-label' %>
-    <div class="controls">
-      <%= f.collection_select(:user_id, @users, :id, :full_name, {:include_blank => "Please select"}, {:class => 'form-control'}) %>
+    <div class="form-group">
+      <%= f.label :q_transaction_id, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :q_transaction_id, :class => 'form-control' %>
+      </div>
     </div>
-  </div>
+    <div class="form-group">
+        <%= f.label :user_id, 'Originator', :class => 'control-label' %>
+        <div class="controls">
+          <%= f.collection_select(:user_id, @users, :id, :full_name, {:include_blank => "Please select"}, {:class => 'form-control'}) %>
+        </div>
+    </div>
 
   
   <%= f.submit nil, :class => 'btn btn-primary' %>

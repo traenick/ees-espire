@@ -11,10 +11,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140806073847) do
+ActiveRecord::Schema.define(version: 20141201160822) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "deq_process_type_arguments", force: true do |t|
+    t.integer  "deq_process_type_id"
+    t.string   "deq_argument"
+    t.string   "json_key"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "deq_process_types", force: true do |t|
+    t.string   "processTypeId",             null: false
+    t.integer  "message_sub_type_id",       null: false
+    t.string   "originating_transactionId"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "deq_response_id"
+  end
+
+  add_index "deq_process_types", ["processTypeId"], name: "Process Type Id", unique: true, using: :btree
+  add_index "deq_process_types", ["processTypeId"], name: "process_type_id", using: :btree
+
+  create_table "deq_responses", force: true do |t|
+    t.text     "response_string"
+    t.datetime "resolved_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "response_string_as_json"
+  end
+
+  create_table "global_variables", force: true do |t|
+    t.string   "key"
+    t.string   "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "message_flows", force: true do |t|
     t.integer  "message_id"
@@ -26,6 +61,7 @@ ActiveRecord::Schema.define(version: 20140806073847) do
     t.string   "response_notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "deq_response_id"
   end
 
   create_table "message_links", force: true do |t|
@@ -41,6 +77,8 @@ ActiveRecord::Schema.define(version: 20140806073847) do
     t.string   "sub_type_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "processTypeId"
+    t.integer  "deq_response_id"
   end
 
   create_table "message_types", force: true do |t|
@@ -51,7 +89,6 @@ ActiveRecord::Schema.define(version: 20140806073847) do
   end
 
   create_table "messages", force: true do |t|
-    t.integer  "type_id"
     t.integer  "message_sub_type_id"
     t.string   "subject"
     t.string   "body"
@@ -60,7 +97,14 @@ ActiveRecord::Schema.define(version: 20140806073847) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "dollar_amt"
+    t.string   "q_transaction_id"
+    t.string   "q_source_id"
+    t.string   "q_cost_center_id"
+    t.string   "q_process_type_id"
+    t.integer  "deq_response_id"
   end
+
+  add_index "messages", ["q_transaction_id"], name: "transaction_id", using: :btree
 
   create_table "response_choices", force: true do |t|
     t.integer  "message_sub_type_id"
@@ -80,6 +124,10 @@ ActiveRecord::Schema.define(version: 20140806073847) do
     t.string   "api_token"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "ees_employee_code"
+    t.integer  "deq_response_id"
   end
+
+  add_index "users", ["ees_employee_code"], name: "ees_emp_code", unique: true, using: :btree
 
 end

@@ -1,0 +1,32 @@
+<%= form_for @deq_process_type, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="form-group">
+    <%= f.label :processTypeId, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :processTypeId, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :message_sub_type_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select(:message_sub_type_id, @message_sub_types, :id, :sub_type_name, :include_blank => "Please select") %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :originating_transactionId, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :originating_transactionId, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :deq_response_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :deq_response_id, :class => 'form-control' %>
+    </div>
+  </div>
+
+  
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            deq_process_types_path, :class => 'btn btn-default' %>
+ 
+<% end %>

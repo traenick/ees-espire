@@ -5,19 +5,24 @@ class WorkspaceController < ApplicationController
 
 
   def index
-    @current_user = User.find(params[:user_id] ? params[:user_id] : 1)
-    #@messages = @current_user.pending_messages
-    @messages = Message.all()
+    @current_user = User.find_by_ees_employee_code(params[:ees_employee_code] ? params[:ees_employee_code] : 'thisguy')
+    @messages = @current_user.pending_messages
+    #@messages = Message.all()
     #@messages_array = JSON.parse(Message.all().to_json)
     @messages_array = []
     @messages.each do |m|
       @messages_array << JSON.parse(m.json_string_digest)
     end
-    message_id = @messages_array.first['id'] unless @messages_array.empty?
-    @selected_message = Message.find(message_id) if message_id
-    @selected_message_hash = JSON.parse(@selected_message.json_string)
-    @message_JSON_to_display = @selected_message.json_string
     @digest_JSON_to_display = @messages_array.to_json
+
+    unless @messages_array.empty?
+      message_id = @messages_array.first['id']
+      @selected_message = Message.find(message_id) if message_id
+      @selected_message_hash = JSON.parse(@selected_message.json_string)
+      @message_JSON_to_display = @selected_message.json_string
+    end
+
+
   end
 
   def load_message
@@ -56,6 +61,12 @@ class WorkspaceController < ApplicationController
 
   def get_digest_JSON_from_URL
     @digest_JSON_to_display = JSON(HTTParty.get(params[:json_url]).body).to_json
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  def show_list
     respond_to do |format|
       format.js
     end

@@ -1,28 +1,24 @@
-<div class="table-responsive visible-md visible-lg">
-  <table class="table table-bordered">
-    <thead>
-    <tr>
-      <th>Type</th>
-      <th>Title</th>
-      <th>From</th>
-      <th style="text-align:right">$ Amt</th>
-      <th>Received</th>
-      <th>Originated</th>
-      <th></th>
-    </tr>
-    </thead>
-    <tbody>
-    <% @messages_array.each do |m| %>
-        <tr id="digest-row-<%= m['id']%>" class="<%= 'info' if m['id'] == @selected_message_hash['id'] %>">
-          <td><%= m['message_sub_type']['sub_type_name'] %></td>
-          <td><%= m['subject'] %></td>
-          <td><%= m['user']['full_name'] %></td>
-          <td><%= number_to_currency(m['dollar_amt_float']) if m['dollar_amt_float']>=0.01 %></td>
-          <td></td>
-          <td><%= m['date_originated_string'] %></td>
-          <td><%= link_to 'VIEW >',load_message_path(m['id']),class:'btn btn-primary',remote:true %></td>
-        </tr>
+<div class="list-group">
+
+  <% @messages_array.each do |m| %>
+  <!--<a class="list-group-item" href="<%= "/workspace/load_message/#{m['id']}" %>" remote="true" > -->
+    <%= link_to load_message_path(m['id']), class:'list-group-item pjax',remote:true do %>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <i class="fa fa-3x fa-plane pull-left"></i>
+        <h4 class="list-group-item-heading"><%= m['user']['full_name'] %></h4>
+        <p class="list-group-item-text"><%= m['message_sub_type']['sub_type_name'] %></p>
+      </div>
+      <div class="col-sm-6">
+        <p class="list-group-item-text"><%= time_ago_in_words(m['created_at'], include_seconds:true) %> ago</p>
+        <p class="list-group-item-text"><%= number_to_currency(m['dollar_amt_float']) if m['dollar_amt_float']>=0.01 %></p>
+      </div>
+    </div>
     <% end %>
-    </tbody>
-  </table>
+  <!--</a>-->
+  <% end %>
+
 </div>
+
+

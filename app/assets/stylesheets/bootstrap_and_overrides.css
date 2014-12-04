@@ -12,6 +12,10 @@
     margin-left: 0px;
 }
 
+.table-small-font {
+    font-size: 12px;
+}
+
 .table > tbody > tr.resolved > td  {
     background-color: #dff0d8;
 }

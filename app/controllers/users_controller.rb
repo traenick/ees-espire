@@ -80,4 +80,50 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  def load__or_update_all_active_users
+    from_db = User.all
+    from_service = HTTParty.get("https://dengine-iis.cloudapp.net/api/employee?type=json").parsed_response
+    puts "Users in DB: " + from_db.length.to_s
+    puts "Employees from Service: " + from_service.length.to_s
+    from_service.each do |emp|
+      if db_emp = from_db.find {|this_emp| this_emp.ees_employee_code == emp['employeeId'] }
+        puts "checking emp:" + db_emp.ees_employee_code + "to see if update needed"
+        if db_emp.first_name.to_s != emp['firstName'].to_s || db_emp.last_name.to_s != emp['lastName'].to_s || db_emp.email_address.to_s != emp['email_address'].to_s
+          db_emp.first_name = emp['firstName'].to_s.titleize
+          db_emp.last_name = emp['lastName'].to_s.titleize
+          db_emp.email_address = emp['email_address'].to_s.titleize
+          db_emp.save
+          puts "updated emp:" + db_emp.ees_employee_code
+        else
+          puts " emp:" + db_emp.ees_employee_code + " up to date"
+        end
+      else
+        new_user = User.new
+        new_user.first_name = emp['firstName'].titleize
+        new_user.last_name = emp['lastName'].titleize
+        new_user.email_address = emp['emailAddress'].to_s.downcase
+        new_user.api_token = emp['employeeId']
+        new_user.ees_employee_code = emp['employeeId']
+        if new_user.save
+          puts "new User created:" + new_user.inspect
+        end
+      end
+    end
+
+    #get user info from Employee service
+    #new_user.first_name = employee_info_json['firstName'] ? employee_info_json['firstName'].titleize : which_ees_emp_code
+    #new_user.last_name = employee_info_json['lastName'] ? employee_info_json['lastName'].titleize : which_ees_emp_code
+    #new_user.email_address = employee_info_json['emailAddress'] ? employee_info_json['emailAddress'] : which_ees_emp_code
+
+    #new_user.api_token = which_ees_emp_code
+    #new_user.ees_employee_code = which_ees_emp_code
+    #new_user.deq_response_id = which_deq_response_id
+    #if new_user.save
+      #puts new_user
+    #end
+  end
+
+
 end

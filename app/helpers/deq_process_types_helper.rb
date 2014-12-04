@@ -1,0 +1,2 @@
+module DeqProcessTypesHelper
+end

@@ -1,0 +1,55 @@
+[
+  {
+    "transactionId": "0141d551-8329-40b9-89b7-f2d64de792d7",
+    "processTypeId": "PurchaseOrder",
+    "stateIndex": 1,
+    "costCenterId": "001-130",
+    "sourceId": "819ca09b-0bac-4b3e-aa74-cbbd08c0775a",
+    "originatorInfo": "0002681",
+    "arguments": [
+      {
+        "key": "TotalAmount",
+        "value": "20000"
+      },
+      {
+        "key": "DocumentNumber",
+        "value": "A12003D123"
+      },
+      {
+        "key": "DocumentNumber",
+        "value": "A12003D123"
+      },
+      {
+        "key": "ExceedsThreshold",
+        "value": "1"
+      },
+      {
+        "key": "Comment",
+        "value": ""
+      },
+      {
+        "key": "ReviewedBy",
+        "value": ""
+      },
+      {
+        "key": "Recipient",
+        "value": "0002181"
+      },
+      {
+        "key": "Initiator",
+        "value": "0002681"
+      }
+    ],
+    "action": {
+      "isResponse": false,
+      "responseOptions": "Accept|Reject"
+    },
+    "attachments": [
+      {
+        "mimeType": "application/pdf",
+        "filePath": "c:\ax\documents\expenses.doc",
+        "url":  "https:\\azureservice.com\ees\expenese.doc"
+      }
+    ]
+  }
+]

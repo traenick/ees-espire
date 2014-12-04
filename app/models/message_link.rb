@@ -1,5 +1,16 @@
+# == Schema Information
+#
+# Table name: message_links
+#
+#  id            :integer          not null, primary key
+#  message_id    :integer
+#  display_title :string(255)
+#  url           :string(255)
+#  created_at    :datetime
+#  updated_at    :datetime
+#
+
 class MessageLink < ActiveRecord::Base
-  attr_accessible :display_title, :message_id, :url
 
   belongs_to :message
 

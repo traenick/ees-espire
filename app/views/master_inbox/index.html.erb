@@ -1,0 +1,24 @@
+<div class="table-responsive">
+  <table class="table table-bordered table-small-font">
+    <thead>
+    <tr>
+      <th>Full Name</th>
+      <th>EES Emp ID</th>
+      <th>Pending Message Count</th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+        <% @user_list.each do |u| %>
+            <tr>
+              <td><%= u.first_name + " " + u.last_name %></td>
+              <td><%= u.ees_employee_code %></td>
+              <td><%= u.pending_messages.count %></td>
+              <td><%= link_to 'Workspace', workspace_path(u.ees_employee_code) %></td>
+              <td><%= link_to 'Email Notifier', notification_testing_path(u.ees_employee_code) %></td>
+            </tr>
+        <% end %>
+    </tbody>
+  </table>
+</div>

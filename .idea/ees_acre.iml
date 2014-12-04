@@ -133,6 +133,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v4.1.6, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.1.6, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.3.6, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="annotate (v2.6.5, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v5.0.1.20140414130214, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap_helper (v4.2.3, RVM: ruby-2.1.2 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, RVM: ruby-2.1.2 [global]) [gem]" level="application" />

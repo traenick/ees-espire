@@ -4,7 +4,7 @@
 
 
 
-<%= form_tag send_user_digest_path, class:'form' do %>
+<%= form_tag send_user_digest_path, :class =>'form' do %>
     <div class="form-group">
       <%= hidden_field_tag 'user_id', @current_user.id %>
       <label>Daily Digest JSON to Email:</label>

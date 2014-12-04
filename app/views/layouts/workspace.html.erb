@@ -50,17 +50,16 @@
     </a>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
-        <li><%= link_to "Workspace", workspace_path %></li>
-        <li><%= link_to "Notifier", notification_testing_path %></li>
-        <li><%= link_to "Mock API Data", messages_path %></li>
+        <li><%= link_to "Master Inbox", master_inbox_path %></li>
+        <li><%= link_to "API Get/Write", message_manager_path %></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <li>
           <% if params[:show_json] == 'show' %>
-            <%= link_to "Hide JSON", workspace_path(1) %>
+            <%= link_to "Hide JSON", workspace_path(@current_user.ees_employee_code) %>
           <% else %>
-            <%= link_to "Show JSON", workspace_path(1,'show') %>
+            <%= link_to "Show JSON", workspace_path(@current_user.ees_employee_code,'show') %>
           <% end %>
         </li>
         <li class="dropdown">
