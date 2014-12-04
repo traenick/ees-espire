@@ -2,7 +2,8 @@
 
   <% @messages_array.each do |m| %>
   <!--<a class="list-group-item" href="<%= "/workspace/load_message/#{m['id']}" %>" remote="true" > -->
-    <%= link_to load_message_path(m['id']), class:'list-group-item pjax',remote:true do %>
+    <%= link_to load_message_path(m['id']),id:"digest-row-#{ m['id']}", class:"list-group-item pjax #{'active' if m['id'] == @selected_message_hash['id']}",remote:true do %>
+
 
     <div class="row">
       <div class="col-sm-6">
