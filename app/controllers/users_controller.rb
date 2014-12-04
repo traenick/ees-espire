@@ -83,8 +83,10 @@ class UsersController < ApplicationController
 
 
   def load__or_update_all_active_users
+    emp_dir_url = GlobalVariable.find_by_key('EMPLOYEE_DIR_URL').value
+    puts emp_dir_url
     from_db = User.all
-    from_service = HTTParty.get("https://dengine-iis.cloudapp.net/api/employee?type=json").parsed_response
+    from_service = HTTParty.get(emp_dir_url).parsed_response
     puts "Users in DB: " + from_db.length.to_s
     puts "Employees from Service: " + from_service.length.to_s
     from_service.each do |emp|
