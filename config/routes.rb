@@ -29,7 +29,7 @@ EesAcre::Application.routes.draw do
 
   resources :messages
 
-  root to: 'workspace#index'
+  root to: 'master_inbox#index'
 
   post 'messages/add_link' => 'messages#add_link', :as =>'add_link'
 
